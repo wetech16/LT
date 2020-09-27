@@ -1,11 +1,18 @@
 import React from "react";
 import "./App.css";
-import Signup from "./pages/Signup";
+import Signup from "./pages/Signup/Signup";
 import {
   createMuiTheme,
   ThemeProvider,
 } from "@material-ui/core/styles";
 import { blue, lightBlue } from "@material-ui/core/colors";
+import Login from "./pages/Login/Login";
+// import {
+ 
+//   Route,
+  
+//   Switch,
+// } from "react-router-dom";
 
 const theme = createMuiTheme({
   palette: {
@@ -22,9 +29,17 @@ const theme = createMuiTheme({
 
 function App() {
   return (
+  <div>
+    {/* <Switch>
+      <Route exact path="/Signup" component={Signup}></Route>
+      <Route exact path="/Login" component={Login}></Route>
+      </Switch> */}
     <ThemeProvider theme={theme}>
       <Signup className="component"></Signup>
+      <Login />
     </ThemeProvider>
+   
+  </div>
   );
 }
 

@@ -18,12 +18,13 @@ function Signup() {
   return (
     <div className="class">
       <form className={classes.root} noValidate autoComplete="off">
-        <TextField id="standard-basic" label="hello" />
+        <TextField id="standard-basic" label="First Name" />
+        <TextField id="standard-basic" label="Last Name" />
+        <TextField id="standard-basic" label="Email" />
       </form>
       <Button variant="contained" color="primary" className="button">
-        Primary
+        Sign up
       </Button>
-      <img src="" />
     </div>
   );
 }
